@@ -1,0 +1,44 @@
+if (opcion == 10)
+            {
+                int opcion1 = 0;
+                Console.WriteLine("Bienvenidos al submenu");
+                Console.WriteLine("1. Salir");
+                Console.WriteLine("2. Sumatoria");
+                Console.WriteLine("3. Factorial");
+                Console.WriteLine("Introduzca la opcion");
+                opcion1 = int.Parse(Console.ReadLine());
+                if (opcion1 == 1)
+                {
+                    System.Environment.Exit(0);
+
+                }
+                if (opcion1 == 2)
+                {
+                    int Num, sum = 0;
+                    Console.WriteLine("ingrese un numero");
+                    Num = Convert.ToInt32(Console.ReadLine());
+                    for (int i = 0; i <= Num; i++)
+                    {
+                        sum = sum + i;
+                    }
+                    Console.WriteLine(sum);
+                    Console.ReadLine();
+
+
+                }
+                if (opcion1==3)
+                {
+                      int numerofactorial, resultado = 1;
+
+                     Console.WriteLine("FACTORIAL DE UN NUMERO C# n Inserta el numero:");
+                     numerofactorial = int.Parse(Console.ReadLine());
+
+                    for (int i = 1; i <= numerofactorial; i++)
+                    {
+                    resultado = resultado * i;
+                    }
+                    Console.WriteLine("El factorial de " + numerofactorial + " es:" + resultado);
+                    Console.ReadLine();
+
+                }
+            }
